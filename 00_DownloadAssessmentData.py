@@ -7,6 +7,13 @@ from concurrent.futures import ThreadPoolExecutor
 from collections import defaultdict
 from tqdm import tqdm
 
+def ensure_urls_end_with_a_forward_slash(url):
+    if not url.endswith('/'):
+        url += '/'
+        return url
+    else:
+        return url
+
 def download_assessment_data(assessment_url, parcels_url, output_file, year=2024, max_records_per_request=2000, use_cache=False, cache_file=None):
     """
     Downloads assessment data records for a specific year from an ArcGIS REST service,
@@ -21,12 +28,9 @@ def download_assessment_data(assessment_url, parcels_url, output_file, year=2024
         use_cache (bool): Whether to use cached assessment data if available
         cache_file (str): Path to the cache file for assessment data
     """
-    # Ensure URLs end with a forward slash
-    if not assessment_url.endswith('/'):
-        assessment_url += '/'
-    if not parcels_url.endswith('/'):
-        parcels_url += '/'
-    
+    ensure_urls_end_with_a_forward_slash(assessment_url)
+    ensure_urls_end_with_a_forward_slash(parcels_url)
+
     # Construct the query URLs
     assessment_query_url = assessment_url + "query"
     parcels_query_url = parcels_url + "query"
