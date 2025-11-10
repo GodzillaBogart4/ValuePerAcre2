@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="33cf86fb-bb16-43f2-881e-ea16a3e40ef1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Classes/query_constructor.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/00_DownloadAssessmentData.py" beforeDir="false" afterPath="$PROJECT_DIR$/00_DownloadAssessmentData.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assessments_cache_2024.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/geosource_assessments_2024.json" beforeDir="false" />
-    </list>
+    <list default="true" id="33cf86fb-bb16-43f2-881e-ea16a3e40ef1" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
